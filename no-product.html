@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>One App - Welcomes you</title>
+</head>
+
+<body>
+    <section class="bg-theme">
+        <div class="container">
+            <div class="row py-2 justify-content-end">
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-exclamation-circle  me-2"></i> About
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-download  me-2"></i> Download App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mob-hide py-0">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <!-- <ul class="navbar-nav nav_list me-auto my-2 my-lg-0 ms-lg-5 ms-0"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" aria-current="page" href="#">Shopping</a>
+                        </li>
+                    </ul> -->
+                    <form class="v-center w-100 ms-5">
+                        <div class="deliver text-center mx-5">
+                            <div class="to">
+                                <span>Delivered to </span>
+                            </div>
+                            <div class="loc">
+                                <span><i class="bi bi-geo-alt"></i> Banglore <span>5000652</span></span>
+                            </div>
+                        </div>
+                        <div class="input-group search">
+                            <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input" placeholder="Search for products & deals"
+                                aria-describedby="inputGroup-sizing-default">
+                                
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link position-relative" href="payment-details.html"><i class="bi h4 cart-theme bi-cart"></i><span
+                                        class="cart-count">4</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropstart">
+                                <a class=" profile-drop" href="#">
+                                    PK
+                                </a>
+                                <a class="nav-link dropdown-toggle fw-500" href="#" id="navbarScrollingDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Amit Kumar <i class="bi bi-chevron-down fs-8"></i>
+                                    <span class="d-block fw-500 fs-12 text-secondary">1,600 WRP</span>
+                                </a>
+                                <ul class="dropdown-menu fs-13" aria-labelledby="navbarScrollingDropdown">
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-details.html">My Details</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="#">Account Summary</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="order-history.html">Order History</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-saved-address.html">My Saved Addressess</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white desktop-hide shadow-sm">
+            <div class="row m-0 mid-center-v pb-1">
+                <div class="col-1 px-2">
+                    <span class="desktop-hide float-start" style="font-size:20px;cursor:pointer" onclick="openNav()">☰</span>
+                </div>
+                <div class="col-1 p-0">
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="w-100"></a>
+                </div>
+                <div class="col-7 px-0">
+                    <div class="input-group search w-100">
+                        <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i
+                                class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input"
+                            placeholder="Search for products &amp; deals" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="col-1 ps-2 pe-0">
+                    <a class="nav-link position-relative" href="#"><i class="bi h4 cart-theme bi-cart"></i><span class="cart-count">4</span></a>
+                </div>
+                <div class="col-2">
+                    <a class=" profile-drop  float-start" href="#">PK</a>
+                </div>
+            </div>
+            <div class="deliver pt-2 border-top px-2">
+                <div class="loc">
+                    <span><i class="bi bi-geo-alt"></i><span  class="to">Delivered to Amit -</span> Banglore <span>5000652</span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="desktop-hide">
+        <div id="mySidenav-left" class="sidenav">
+            <div class="mb-3">
+                <div class="mob-menu text-center">
+                    <a class=" profile-drop" href="#">
+                        PK
+                    </a>
+                    <span class="fs-14">Name</span>
+                    <div><span class="text-theme bg-lite px-3 rounded-pill"><small> 400 WRP</small></span></div>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="closebtn border-0" onclick="closeNav()">&times;</a>
+            <a href="#">My Details</a>
+            <a href="#">Account Summary</a>
+            <a href="#">Order History</a>
+            <a href="#">My Saved Addresses</a>
+            <a class="fw-500 border-0"> Quick Links </a>
+            <a class="border-0">Terms & Conditions </a>
+            <a class="border-0">Contact US</a>
+            <a class="border-0">Refund Policy</a>
+            <a class="border-0">Privacy Policy</a>
+            <a class="border-0">Help & FAQs</a>
+            <a class="fw-500 border-0"> Contact US</a>
+            <a class="border-0">Email support@winds.co.in</a>
+            <a class="border-0">1800 103 1032 (From 9am to 9am)</a>
+        </div>
+    </section>
+    <section class="filter-bottom desktop-hide">
+        <div class="btn-group w-100 p-3">
+            <button class="btn btn-theme w-100 p-md-2 fs-18 p-3">Proceed</button>
+        </div>
+    </section>
+    
+    <main>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mid-center-v mt-4">
+                            <span class="filter-icon-md me-2"><i class="bi bi-cart3 text-theme fs-20"></i></span>
+                            <span class="icon-text">My Cart (3 Items)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="card border-0 card-shadow p-5">
+                        <div class="card-body">
+                            <div class="col-12">
+                                <div class="text-center">
+                                    <img src="assets/images/cart.png" width="200px">
+                                </div>
+                            </div>
+                            <div class="col-12 my-5 text-center">
+                                <h6 class=" fs-20">Your cart is empty!</h6>
+                            </div>
+                            <div class="col-12 mt-3 text-center">
+                                <button type="button" class="btn btn-theme btn-lg p-3 fs-16 w-auto px-5">Start Shopping Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pt-4 px-md-0 px-3 mob-hide">
+        <div class="container py-5">
+            <div class="row mb-3">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <img src="assets/images/logo-foot.png" class="w-100">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-pinterest"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Terms & Conditions</a>
+                                <a class="foot-link">Contact US</a>
+                                <a class="foot-link">Refund Policy</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 mb-md-0 mb-3">
+                            <div class="invisible">
+                                <h6 class="fs-18 foot-head">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Privacy Policy</a>
+                                <a class="foot-link">Help & FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Customer Care</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Email support@winds.co.in</a>
+                                <a class="foot-link">1800 103 1032 (From 9am to 9am)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-black py-2 px-0">
+            <div class="row m-0">
+                <div class="col-md-12 text-center">
+                    <div class="foot-text">
+                        <small> &copy; Copyright 2022 WINDS E WORLD</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jQuery_v3.6.0.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav-left").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav-left").style.width = "0";
+        }
+    </script>
+
+    <script>
+        function openfilter() {
+            document.getElementById("bottom-nav").style.height = "auto";
+        }
+
+        function closefilter() {
+            document.getElementById("bottom-nav").style.height = "0";
+        }
+
+         function openSort() {
+                document.getElementById("sort-nav").style.height = "auto";
+            }
+
+            function closeSort() {
+                document.getElementById("sort-nav").style.height = "0";
+            }
+    </script>
+    <script>
+         $(document).ready(function () {
+                $(".btn-minus").on("click", function () {
+                    var now = $(".countItem input").val();
+                    if ($.isNumeric(now)) {
+                        if (parseInt(now) - 1 > 0) { now--; }
+                        $(".countItem input").val(now);
+                    }
+                })
+                $(".btn-plus").on("click", function () {
+                    var now = $(".countItem input").val();
+                    if ($.isNumeric(now)) {
+                        $(".countItem input").val(parseInt(now) + 1);
+                    }
+                })
+            })
+    </script>
+</body>
+
+</html>

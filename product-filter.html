@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>One App - Welcomes you</title>
+</head>
+
+<body>
+    <section class="bg-theme">
+        <div class="container">
+            <div class="row py-2 justify-content-end">
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-exclamation-circle  me-2"></i> About
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-download  me-2"></i> Download App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mob-hide py-0">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <!-- <ul class="navbar-nav nav_list me-auto my-2 my-lg-0 ms-lg-5 ms-0"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" aria-current="page" href="#">Shopping</a>
+                        </li>
+                    </ul> -->
+                    <form class="v-center w-100 ms-5">
+                        <div class="deliver text-center mx-5">
+                            <div class="to">
+                                <span>Delivered to </span>
+                            </div>
+                            <div class="loc">
+                                <span><i class="bi bi-geo-alt"></i> Banglore <span>5000652</span></span>
+                            </div>
+                        </div>
+                        <div class="input-group search">
+                            <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input" placeholder="Search for products & deals"
+                                aria-describedby="inputGroup-sizing-default">
+                                
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link position-relative" href="payment-details.html"><i class="bi h4 cart-theme bi-cart"></i><span
+                                        class="cart-count">4</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropstart">
+                                <a class=" profile-drop" href="#">
+                                    PK
+                                </a>
+                                <a class="nav-link dropdown-toggle fw-500" href="#" id="navbarScrollingDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Amit Kumar <i class="bi bi-chevron-down fs-8"></i>
+                                    <span class="d-block fw-500 fs-12 text-secondary">1,600 WRP</span>
+                                </a>
+                                <ul class="dropdown-menu fs-13" aria-labelledby="navbarScrollingDropdown">
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-details.html">My Details</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="#">Account Summary</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="order-history.html">Order History</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-saved-address.html">My Saved Addressess</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white desktop-hide shadow-sm">
+            <div class="row m-0 mid-center-v pb-1">
+                <div class="col-1 px-2">
+                    <span class="desktop-hide float-start" style="font-size:20px;cursor:pointer" onclick="openNav()">☰</span>
+                </div>
+                <div class="col-1 p-0">
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="w-100"></a>
+                </div>
+                <div class="col-7 px-0">
+                    <div class="input-group search w-100">
+                        <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i
+                                class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input"
+                            placeholder="Search for products &amp; deals" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="col-1 ps-2 pe-0">
+                    <a class="nav-link position-relative" href="#"><i class="bi h4 cart-theme bi-cart"></i><span
+                            class="cart-count">4</span></a>
+                </div>
+                <div class="col-2">
+                    <a class=" profile-drop  float-start" href="#">PK</a>
+                </div>
+            </div>
+            <div class="deliver pt-2 border-top px-2">
+                <div class="loc">
+                    <span><i class="bi bi-geo-alt"></i><span  class="to">Delivered to Amit -</span> Banglore <span>5000652</span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="desktop-hide">
+        <div id="mySidenav-left" class="sidenav">
+            <div class="mb-3">
+                <div class="mob-menu text-center">
+                    <a class=" profile-drop" href="#">
+                        PK
+                    </a>
+                    <span class="fs-14">Name</span>
+                    <div><span class="text-theme bg-lite px-3 rounded-pill"><small> 400 WRP</small></span></div>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="closebtn border-0" onclick="closeNav()">&times;</a>
+            <a href="#">My Details</a>
+            <a href="#">Account Summary</a>
+            <a href="#">Order History</a>
+            <a href="#">My Saved Addresses</a>
+            <a class="fw-500 border-0"> Quick Links </a>
+            <a class="border-0">Terms & Conditions </a>
+            <a class="border-0">Contact US</a>
+            <a class="border-0">Refund Policy</a>
+            <a class="border-0">Privacy Policy</a>
+            <a class="border-0">Help & FAQs</a>
+            <a class="fw-500 border-0"> Contact US</a>
+            <a class="border-0">Email support@winds.co.in</a>
+            <a class="border-0">1800 103 1032 (From 9am to 9am)</a>
+        </div>
+    </section>
+    <section class="filter-bottom desktop-hide">
+        <div class="btn-group w-100" role="group" aria-label="Basic outlined example">
+            <button type="button" onclick="openfilter()" class="btn btn-outline-dark rounded-0 p-3 fs-16 border-0 border-end">Filter</button>
+            <button type="button" onclick="openSort()" class="btn btn-outline-dark rounded-0 p-3 fs-16 border-0">Sort by</button>
+        </div>
+
+        <div id="bottom-nav" class="bottom-nav">
+            <a href="javascript:void(0)" class="closebtn fw-500 border-bottom" onclick="closefilter()"> <span>Filter </span>&times;</a>      
+            <div class="input-group search w-100 p-3">
+                <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input"
+                    placeholder="Search for products &amp; deals" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="px-3">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Apple <span class="text-muted"><small>(225)</small></span>
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Amazon <span class="text-muted"><small>(225)</small></span>
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Boat <span class="text-muted"><small>(225)</small></span>
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Myntra <span class="text-muted"><small>(225)</small></span>
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Flipkart <span class="text-muted"><small>(225)</small></span>
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Uber <span class="text-muted"><small>(225)</small></span>
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Big Basket <span class="text-muted"><small>(225)</small></span>
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Max <span class="text-muted"><small>(225)</small></span>
+                    </label>
+                </div>
+            </div>
+            <div class="p-3">
+                <button class="btn btn-theme w-100">Apply</button>
+            </div>
+        </div>
+
+        <div id="sort-nav" class="bottom-nav">
+            <a href="javascript:void(0)" class="closebtn fw-500 border-bottom" onclick="closeSort()"> <span>Sort by
+                </span>&times;</a>
+
+            <div class="mt-3">
+                <div class="form-check mb-2">
+                    <label class="h6" for="flexCheckDefault">
+                       What's New
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <label class="h6" for="flexCheckDefault">
+                        Price - High to Low
+                    </label>
+                </div>
+
+                <div class="form-check mb-2">
+                    <label class="h6" for="flexCheckDefault">
+                        Price - Low to High
+                    </label>
+                </div>
+                
+            </div>
+            <div class="p-3">
+                <button class="btn btn-theme w-100">Apply</button>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+        <section class="py-3 mt-md-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Electronics</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-4 mob-hide">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <label class="me-2 fs-14">Sort by </label>
+                            <div class="dropdown">
+                                <button class="btn bg-drop sort dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Whats New</a></li>
+                                    <li><a class="dropdown-item" href="#">Price - High to Low</a></li>
+                                    <li><a class="dropdown-item" href="#">Price - Low to High</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-3">
+                <span class="text-secondary">Search Results ( 1,235 )</span>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <ul class="nav nav-pills mb-md-3 scroll-tab" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-mobile-phones-tab" data-bs-toggle="pill" data-bs-target="#pills-mobile-phones"
+                                type="button" role="tab" aria-controls="pills-mobile-phones" aria-selected="true">Mobile Phones & accessories</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-headphones-tab" data-bs-toggle="pill" data-bs-target="#pills-headphones"
+                                type="button" role="tab" aria-controls="pills-headphones" aria-selected="false">Headphones & Speakers</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-computer-tab" data-bs-toggle="pill" data-bs-target="#pills-computer" type="button"
+                                role="tab" aria-controls="pills-computer" aria-selected="true">Computer, Laptops & Accessories</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-watchs-tab" data-bs-toggle="pill" data-bs-target="#pills-watchs" type="button"
+                                role="tab" aria-controls="pills-watchs" aria-selected="false">Smart Watches</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content pt-3" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-mobile-phones" role="tabpanel" aria-labelledby="pills-mobile-phones-tab" tabindex="0">
+                            <div class="container p-md-0">
+                                <div class="row">
+                                    <div class="col-md-3 mob-hide pe-4 ps-0">
+                                        <div>
+                                            <div class="card border-0 card-shadow">
+                                                <div class="card-body">
+                                                    <div class="filter-head border-bottom pb-3">
+                                                        <div>
+                                                            <span class="filter-icon me-2"><i class="bi bi-funnel text-theme fs-12"></i></span>
+                                                            <span class="h6"> Filters</span>
+                                                            <span class="fs-14 float-end text-theme mt-1"> Clear all</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <label>Brands</label>
+                                                        <div class="input-group search">
+                                                            <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+                                                            <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input"
+                                                                placeholder="Search Brands" aria-describedby="inputGroup-sizing-default">
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-3 filter-scroll">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Apple <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Amazon <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Boat <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Myntra <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Flipkart <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Uber <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Big Basket <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                               Max <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Apple <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Amazon <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Boat <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Myntra <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Flipkart <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Uber <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Big Basket <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Max <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Apple <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Amazon <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Boat <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Myntra <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Flipkart <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Uber <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Big Basket <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Max <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Apple <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Amazon <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Boat <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Myntra <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Flipkart <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Uber <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Big Basket <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Max <span class="text-muted"><small>(225)</small></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 px-md-3 px-0">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-md-4 px-md-3 px-1 col-6 mb-4">
+                                                    <a href="product-detail.html" class="product-items">
+                                                        <div class="product-img mb-3">
+                                                            <img src="assets/images/products/mobile.jpg">
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                                        </div>
+                                                        <div class="product-price mt-1">
+                                                            <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                                        </div>
+                                                        <div class="product-off">
+                                                            <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                        
+                                                <div class="col-md-4 px-md-3 px-1 col-6 mb-4">
+                                                    <a href="product-detail.html" class="product-items">
+                                                        <div class="product-img mb-3">
+                                                            <img src="assets/images/products/mobile.jpg">
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                                        </div>
+                                                        <div class="product-price mt-1">
+                                                            <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                                        </div>
+                                                        <div class="product-off">
+                                                            <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                                                
+                                                <div class="col-md-4 px-md-3 px-1 col-6 mb-4">
+                                                    <a  href="product-detail.html"class="product-items">
+                                                        <div class="product-img mb-3">
+                                                            <img src="assets/images/products/mobile.jpg">
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                                        </div>
+                                                        <div class="product-price mt-1">
+                                                            <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                                        </div>
+                                                        <div class="product-off">
+                                                            <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                        
+                                                <div class="col-md-4 px-md-3 px-1 col-6 mb-4">
+                                                    <a href="product-detail.html" class="product-items">
+                                                        <div class="product-img mb-3">
+                                                            <img src="assets/images/products/mobile.jpg">
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                                        </div>
+                                                        <div class="product-price mt-1">
+                                                            <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                                        </div>
+                                                        <div class="product-off">
+                                                            <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                        
+                                                <div class="col-md-4 px-md-3 px-1 col-6 mb-4">
+                                                    <a href="product-detail.html" class="product-items">
+                                                        <div class="product-img mb-3">
+                                                            <img src="assets/images/products/mobile.jpg">
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                                        </div>
+                                                        <div class="product-price mt-1">
+                                                            <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                                        </div>
+                                                        <div class="product-off">
+                                                            <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                        
+                                                <div class="col-md-4 px-md-3 px-1 col-6 mb-4">
+                                                    <a href="product-detail.html" class="product-items">
+                                                        <div class="product-img mb-3">
+                                                            <img src="assets/images/products/mobile.jpg">
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                                        </div>
+                                                        <div class="product-price mt-1">
+                                                            <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                                        </div>
+                                                        <div class="product-off">
+                                                            <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                        
+                                                <div class="col-md-4 px-md-3 px-1 col-6 mb-4">
+                                                    <a href="product-detail.html" class="product-items">
+                                                        <div class="product-img mb-3">
+                                                            <img src="assets/images/products/mobile.jpg">
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                                        </div>
+                                                        <div class="product-price mt-1">
+                                                            <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                                        </div>
+                                                        <div class="product-off">
+                                                            <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                        
+                                                <div class="col-md-4 px-md-3 px-1 col-6 mb-4">
+                                                    <a href="product-detail.html" class="product-items">
+                                                        <div class="product-img mb-3">
+                                                            <img src="assets/images/products/mobile.jpg">
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                                        </div>
+                                                        <div class="product-price mt-1">
+                                                            <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                                        </div>
+                                                        <div class="product-off">
+                                                            <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                        
+                                                <div class="col-md-4 px-md-3 px-1 col-6 mb-4">
+                                                    <a href="product-detail.html" class="product-items">
+                                                        <div class="product-img mb-3">
+                                                            <img src="assets/images/products/mobile.jpg">
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                                        </div>
+                                                        <div class="product-price mt-1">
+                                                            <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                                        </div>
+                                                        <div class="product-off">
+                                                            <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center my-4">
+                                            <button class="btn btn-lite-theme">Show More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-headphones" role="tabpanel" aria-labelledby="pills-headphones-tab" tabindex="0">
+                            Hello
+                        </div>
+                        <div class="tab-pane fade" id="pills-computer" role="tabpanel" aria-labelledby="pills-computer-tab" tabindex="0">
+                            Hello 2
+                        </div>
+                        <div class="tab-pane fade" id="pills-watchs" role="tabpanel" aria-labelledby="pills-watchs-tab" tabindex="0">
+                            Hello 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pt-4 px-md-0 px-3 mob-hide">
+        <div class="container py-5">
+            <div class="row mb-3">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <img src="assets/images/logo-foot.png" class="w-100">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-pinterest"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Terms & Conditions</a>
+                                <a class="foot-link">Contact US</a>
+                                <a class="foot-link">Refund Policy</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 mb-md-0 mb-3">
+                            <div class="invisible">
+                                <h6 class="fs-18 foot-head">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Privacy Policy</a>
+                                <a class="foot-link">Help & FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Customer Care</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Email support@winds.co.in</a>
+                                <a class="foot-link">1800 103 1032 (From 9am to 9am)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-black py-2 px-0">
+            <div class="row m-0">
+                <div class="col-md-12 text-center">
+                    <div class="foot-text">
+                        <small> &copy; Copyright 2022 WINDS E WORLD</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jQuery_v3.6.0.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav-left").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav-left").style.width = "0";
+        }
+    </script>
+
+    <script>
+        function openfilter() {
+            document.getElementById("bottom-nav").style.height = "auto";
+        }
+
+        function closefilter() {
+            document.getElementById("bottom-nav").style.height = "0";
+        }
+
+         function openSort() {
+                document.getElementById("sort-nav").style.height = "auto";
+            }
+
+            function closeSort() {
+                document.getElementById("sort-nav").style.height = "0";
+            }
+    </script>
+</body>
+
+</html>

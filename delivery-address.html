@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>One App - Welcomes you</title>
+</head>
+
+<body>
+    <section class="bg-theme">
+        <div class="container">
+            <div class="row py-2 justify-content-end">
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-exclamation-circle  me-2"></i> About
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-download  me-2"></i> Download App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mob-hide py-0">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <!-- <ul class="navbar-nav nav_list me-auto my-2 my-lg-0 ms-lg-5 ms-0"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" aria-current="page" href="#">Shopping</a>
+                        </li>
+                    </ul> -->
+                    <form class="v-center w-100 ms-5">
+                        <div class="deliver text-center mx-5">
+                            <div class="to">
+                                <span>Delivered to </span>
+                            </div>
+                            <div class="loc">
+                                <span><i class="bi bi-geo-alt"></i> Banglore <span>5000652</span></span>
+                            </div>
+                        </div>
+                        <div class="input-group search">
+                            <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input" placeholder="Search for products & deals"
+                                aria-describedby="inputGroup-sizing-default">
+                                
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link position-relative" href="payment-details.html"><i class="bi h4 cart-theme bi-cart"></i><span
+                                        class="cart-count">4</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropstart">
+                                <a class=" profile-drop" href="#">
+                                    PK
+                                </a>
+                                <a class="nav-link dropdown-toggle fw-500" href="#" id="navbarScrollingDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Amit Kumar <i class="bi bi-chevron-down fs-8"></i>
+                                    <span class="d-block fw-500 fs-12 text-secondary">1,600 WRP</span>
+                                </a>
+                                <ul class="dropdown-menu fs-13" aria-labelledby="navbarScrollingDropdown">
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-details.html">My Details</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="#">Account Summary</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="order-history.html">Order History</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-saved-address.html">My Saved Addressess</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white desktop-hide shadow-sm">
+            <div class="row m-0 mid-center-v pb-1">
+                <div class="col-1 px-2">
+                    <span class="desktop-hide float-start" style="font-size:20px;cursor:pointer" onclick="openNav()">☰</span>
+                </div>
+                <div class="col-1 p-0">
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="w-100"></a>
+                </div>
+                <div class="col-7 px-0">
+                    <div class="input-group search w-100">
+                        <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i
+                                class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input"
+                            placeholder="Search for products &amp; deals" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="col-1 ps-2 pe-0">
+                    <a class="nav-link position-relative" href="#"><i class="bi h4 cart-theme bi-cart"></i><span class="cart-count">4</span></a>
+                </div>
+                <div class="col-2">
+                    <a class=" profile-drop  float-start" href="#">PK</a>
+                </div>
+            </div>
+            <div class="deliver pt-2 border-top px-2">
+                <div class="loc">
+                    <span><i class="bi bi-geo-alt"></i><span  class="to">Delivered to Amit -</span> Banglore <span>5000652</span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="desktop-hide">
+        <div id="bottom-nav" class="bottom-nav mb-5 pb-5">
+            <a href="javascript:void(0)" class="closebtn fw-500 border-bottom" onclick="closefilter()">
+                <span>Filter</span>&times;</a>
+            <form class="row mt-3 mx-0 ps-0 ps-md-4">
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Full Name</label>
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Mobile Number</label>
+                    </div>
+                </div>
+            
+                <div class="col-md-3">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">PIN Code</label>
+                    </div>
+                </div>
+            
+                <div class="col-md-3">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>-Select-</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <label for="floatingSelect">State</label>
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Address (House No., Building Name)</label>
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Address (Street., Area)</label>
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">City / District</label>
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Landmark</label>
+                    </div>
+                </div>
+            
+                <div class="mb-3">
+                    <div class="fs-10 text-muted mt-3 mb-2">
+                        Type of Address
+                    </div>
+                    <div class="d-flex">
+                        <a class="badge rounded-pill fw-400 fs-12 py-2 px-3 bg-light-gray text-muted"><i
+                                class="bi bi-house-door-fill"></i> Home</a>
+                        <a class="badge rounded-pill fw-400 fs-12 py-2 px-3 bg-light-gray text-muted"><i
+                                class="bi bi-briefcase-fill"></i> Office</a>
+                    </div>
+                </div>
+            
+                <div class="mb-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Save this address
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <section class="filter-bottom desktop-hide">
+        <div class="btn-group w-100 p-3">
+            <button class="btn btn-theme w-100 p-md-2 fs-18 p-3">Proceed</button>
+        </div>
+    </section>
+    
+    <main>
+        <section class="py-3 mt-md-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">My Cart</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Select Delivery Address</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4 mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mid-center-v">
+                            <span class="filter-icon-md me-2"><i class="bi bi-truck text-theme fs-20"></i></span>
+                            <span class="icon-text">Select Delivery Address</span>
+                        </div>
+                        <div class="card border-0 card-shadow mt-3 mb-4 w-100">
+                            <div class="card-body">
+                                <div class="row border-bottom pb-3 mb-3 position-relative">
+                                    <div class="col-md-10">
+                                        <div class="product-items">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label fw-600" for="flexRadioDefault1">
+                                                    Amit Kumar
+                                                </label>
+                                                <a href="#" class="text-theme float-md-none float-end ms-2 fw-500" style="
+                                                    float: none;
+                                                ">Edit</a>
+                                            </div>
+                                            <div class="fw-normal ps-4 fs-14 w-100 mt-2">
+                                                <span>Reward360 Global Services, Fortune Summit Business Park, Plot No.244, 6th Floor, West Side, Hosur Rd, Bengaluru,
+                                                Karnataka 560068</span>
+                                            </div>
+                                            <div class="ps-4 mt-2">
+                                                <span class="wrp-percent btn bg-light-gray py-1 px-3">OFFICE</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row border-bottom pb-3 mb-3 position-relative">
+                                    <div class="col-md-10">
+                                        <div class="product-items">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label fw-600" for="flexRadioDefault1">
+                                                    Amit Kumar
+                                                </label>
+                                                <a href="#" class="text-theme float-md-none float-end ms-2 fw-500" style="
+                                                                                    float: none;
+                                                                                ">Edit</a>
+                                            </div>
+                                            <div class="fw-normal ps-4 fs-14 w-100 mt-2">
+                                                <span>Reward360 Global Services, Fortune Summit Business Park, Plot No.244, 6th Floor, West Side, Hosur
+                                                    Rd, Bengaluru,
+                                                    Karnataka 560068</span>
+                                            </div>
+                                            <div class="ps-4 mt-2">
+                                                <span class="wrp-percent btn bg-light-gray py-1 px-3">HOME</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row border-bottom pb-3 mb-3 position-relative mob-hide">
+                                    <div class="col-md-12">
+                                        <div class="product-items">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label fw-600" for="flexRadioDefault1">
+                                                    Add New Address
+                                                </label>
+                                            </div>
+                                            <form class="row mt-3 ps-0 ps-md-4">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                        <label for="floatingInput">Full Name</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Mobile Number</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                        <label for="floatingInput">PIN Code</label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-3">
+                                                    <div class="form-floating mb-3">
+                                                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                            <option selected>-Select-</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="floatingSelect">State</label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Address (House No., Building Name)</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Address (Street., Area)</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">City / District</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Landmark</label>
+                                                    </div>
+                                                </div>  
+                                                
+                                                <div class="mb-3">
+                                                    <div class="fs-10 text-muted mt-3 mb-2">
+                                                        Type of Address
+                                                    </div>
+                                                    <div>
+                                                        <a class="badge rounded-pill fw-400 fs-12 py-2 px-3 bg-light-gray text-muted"><i class="bi bi-house-door-fill"></i> Home</a>
+                                                        <a class="badge rounded-pill fw-400 fs-12 py-2 px-3 bg-light-gray text-muted"><i class="bi bi-briefcase-fill"></i> Office</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Save this address
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-grid gap-2 d-md-block">
+                                                    <button type="button" class="btn btn-theme btn-lg p-3 fs-16 col-md-6">Proceed</button>
+                                                    <button type="button" class="btn  btn-lg p-3 text-theme fs-16 col-md-3">Cancel</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-md-start text-center">
+                                    <button type="button" class="btn btn-outline-theme" onclick="openfilter()">+ Add New Address</button>
+                                    <div id="overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 pb-5">
+                        <div class="mid-center-v">
+                            <span class="filter-icon-md me-2"><i class="bi bi-credit-card text-theme fs-20"></i></span>
+                            <span class="icon-text">Payment Details</span>
+                        </div>
+                        <div class="card border-0 card-shadow mt-3 mb-5 w-100">
+                            <div class="card-body pay-card">
+                                <div class="points mb-2">
+                                    <span>Points</span><span class="price">1,700WRP</span>
+                                </div>
+                                <div class="points border-bottom pb-3">
+                                    <span>Cash</span><span class="price">₹ 8,338</span>
+                                </div>
+                                <div class="points my-3">
+                                    <span class="fw-bold">Total</span><span class="fw-bold">₹ 8,338 + 1,700 WRP</span>
+                                </div>
+                                <div class="row m-0 alert alert-danger" role="alert">
+                                    <div class="col-1 p-0">
+                                        <i class="bi bi-exclamation-circle-fill me-2"></i>
+                                    </div>
+                                    <div class="col-11 p-0">
+                                        <div class="fs-12 mb-2">
+                                            You don’t have enough points in your account. Please reduce products in the cart to continue
+                                        </div>
+                                        <div class="fs-12 text-black fw-500">
+                                            Available Points: 1,600 WRP
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 mob-hide">
+                                    <button type="button" class="btn btn-theme btn-lg p-3 fs-16 w-100">Proceed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pt-4 px-md-0 px-3 mob-hide">
+        <div class="container py-5">
+            <div class="row mb-3">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <img src="assets/images/logo-foot.png" class="w-100">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-pinterest"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Terms & Conditions</a>
+                                <a class="foot-link">Contact US</a>
+                                <a class="foot-link">Refund Policy</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 mb-md-0 mb-3">
+                            <div class="invisible">
+                                <h6 class="fs-18 foot-head">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Privacy Policy</a>
+                                <a class="foot-link">Help & FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Customer Care</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Email support@winds.co.in</a>
+                                <a class="foot-link">1800 103 1032 (From 9am to 9am)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-black py-2 px-0">
+            <div class="row m-0">
+                <div class="col-md-12 text-center">
+                    <div class="foot-text">
+                        <small> &copy; Copyright 2022 WINDS E WORLD</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jQuery_v3.6.0.js"></script>
+    <script>
+        function openfilter() {
+            document.getElementById("bottom-nav").style.minHeight = "600px";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closefilter() {
+            document.getElementById("bottom-nav").style.minHeight = "0";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+    <script>
+         $(document).ready(function () {
+                $(".btn-minus").on("click", function () {
+                    var now = $(".countItem input").val();
+                    if ($.isNumeric(now)) {
+                        if (parseInt(now) - 1 > 0) { now--; }
+                        $(".countItem input").val(now);
+                    }
+                })
+                $(".btn-plus").on("click", function () {
+                    var now = $(".countItem input").val();
+                    if ($.isNumeric(now)) {
+                        $(".countItem input").val(parseInt(now) + 1);
+                    }
+                })
+            })
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav-left").style.width="250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav-left").style.width="0";
+        }
+    </script>
+</body>
+
+</html>

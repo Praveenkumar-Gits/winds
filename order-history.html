@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>One App - Welcomes you</title>
+</head>
+
+<body>
+    <section class="bg-theme">
+        <div class="container">
+            <div class="row py-2 justify-content-end">
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-exclamation-circle  me-2"></i> About
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-download  me-2"></i> Download App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mob-hide py-0">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <!-- <ul class="navbar-nav nav_list me-auto my-2 my-lg-0 ms-lg-5 ms-0"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" aria-current="page" href="#">Shopping</a>
+                        </li>
+                    </ul> -->
+                    <form class="v-center w-100 ms-5">
+                        <div class="deliver text-center mx-5">
+                            <div class="to">
+                                <span>Delivered to </span>
+                            </div>
+                            <div class="loc">
+                                <span><i class="bi bi-geo-alt"></i> Banglore <span>5000652</span></span>
+                            </div>
+                        </div>
+                        <div class="input-group search">
+                            <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input" placeholder="Search for products & deals"
+                                aria-describedby="inputGroup-sizing-default">
+                                
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link position-relative" href="payment-details.html"><i class="bi h4 cart-theme bi-cart"></i><span
+                                        class="cart-count">4</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropstart">
+                                <a class=" profile-drop" href="#">
+                                    PK
+                                </a>
+                                <a class="nav-link dropdown-toggle fw-500" href="#" id="navbarScrollingDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Amit Kumar <i class="bi bi-chevron-down fs-8"></i>
+                                    <span class="d-block fw-500 fs-12 text-secondary">1,600 WRP</span>
+                                </a>
+                                <ul class="dropdown-menu fs-13" aria-labelledby="navbarScrollingDropdown">
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-details.html">My Details</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="#">Account Summary</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="order-history.html">Order History</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-saved-address.html">My Saved Addressess</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white desktop-hide shadow-sm">
+            <div class="row m-0 mid-center-v pb-1">
+                <div class="col-1 px-2">
+                    <span class="desktop-hide float-start" style="font-size:20px;cursor:pointer" onclick="openNav()">☰</span>
+                </div>
+                <div class="col-1 p-0">
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="w-100"></a>
+                </div>
+                <div class="col-7 px-0">
+                    <div class="input-group search w-100">
+                        <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i
+                                class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input"
+                            placeholder="Search for products &amp; deals" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="col-1 ps-2 pe-0">
+                    <a class="nav-link position-relative" href="#"><i class="bi h4 cart-theme bi-cart"></i><span class="cart-count">4</span></a>
+                </div>
+                <div class="col-2">
+                    <a class=" profile-drop  float-start" href="#">PK</a>
+                </div>
+            </div>
+            <div class="deliver pt-2 border-top px-2">
+                <div class="loc">
+                    <span><i class="bi bi-geo-alt"></i><span  class="to">Delivered to Amit -</span> Banglore <span>5000652</span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="py-3 mt-md-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item" aria-current="page">My Cart</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4 mt-md-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 pb-md-5">
+                        <div class="card border-0 card-shadow mt-md-3 mb-mb-5 w-100">
+                            <div class="card-body p-md-5">
+                                <div class="points mb-4">
+                                    <strong>Points Summary</strong>
+                                </div>
+                                <div>
+                                    <div class="card text-center text-white p-4 pay-pg border-0">
+                                        <div class="mb-3">
+                                            <span>Total Points Available</span>
+                                        </div>
+                                        <div>
+                                            <span class="h2 fw-600">400 WRP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card border-0 card-shadow mt-3 mb-3 w-100">
+                            <div class="card-body pb-0">
+                                <div class="row position-relative">
+                                    <div class="col-12 mb-3">
+                                        <div class="row">
+                                            <div class="col-md-7 col-10">
+                                                <span class="text-muted fs-14">Order #1234567890 | 26 Oct, 06:34 PM</span>
+                                            </div>
+                                            <div class="col-md-5 col-2 text-end">
+                                                <a href="order-details.html" class="mob-hide"><span class="fs-12 text-theme">View Order Details ></span></a>
+                                                <a href="#" class="desktop-hide"><i class="bi bi-arrow-right-circle-fill text-theme"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <div class="img-pro-card">
+                                            <img src="assets/images/Rectangle 10024.png" class="w-100 h-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-8 ps-md-3  pe-md-3 ps-0 pe-5">
+                                        <div class="row h-100">
+                                            <div class="col-md-8">
+                                                <a class="product-items">
+                                                    <div class="product-name-md">
+                                                        <span>UNIGEN UNIPAD 150 Premium Wireless Charger Pad | 15W Type-C PD...</span>
+                                                    </div>
+                                                    <div class="product-price mt-md-4 mt-0 mb-2">
+                                                        <span class="text-dark fw-500 mb-4"><i class="bi bi-truck"></i> Shipped</span>
+                                                    </div>
+                                                    <div class="product-off d-flex mt-1">
+                                                        <span class="text-muted wrp-percent">Delivery expected by 06 Jan’22</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 d-flex align-items-center justifycontent-center">
+                                                <div>
+                                                    <span class="fs-20 fw-600">₹ 1,199 + 500 WRP</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="order-screen">
+                                                <h2 class="accordion-header border-top mt-3" id="flush-headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                        Cancellation Policy
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body mb-3">Once order is placed, cannot be cancelled’. Order can be replaced or returned for faulty or damaged products delivered,
+                                                    for more details visit <a href="#" class="text-theme">Help</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 card-shadow mt-3 mb-4 w-100">
+                            <div class="card-body pb-0">
+                                <div class="row position-relative">
+                                    <div class="col-12 mb-3">
+                                        <div class="row">
+                                            <div class="col-md-7 col-10">
+                                                <span class="text-muted fs-14">Order #1234567890 | 26 Oct, 06:34 PM</span>
+                                            </div>
+                                            <div class="col-md-5 col-2 text-end">
+                                                <a href="order-details.html" class="mob-hide"><span class="fs-12 text-theme">View Order Details ></span></a>
+                                                <a href="#" class="desktop-hide"><i class="bi bi-arrow-right-circle-fill text-theme"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <div class="img-pro-card">
+                                            <img src="assets/images/p2.png" class="w-100 h-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-8 ps-md-3  pe-md-3 ps-0 pe-5">
+                                        <div class="row h-100">
+                                            <div class="col-md-8">
+                                                <a class="product-items">
+                                                    <div class="product-name-md">
+                                                        <span>Westside Gift Voucher</span>
+                                                    </div>
+                                                    <div class="product-price mt-md-4 mt-0 mb-2">
+                                                        <span class="text-muted mb-4 fs-12"><i class="bi bi-check-circle-fill text-success h6 me-2"></i>Delivered on 16 May’21</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 d-flex align-items-center justifycontent-center">
+                                                <div>
+                                                    <span class="fs-20 fw-600">₹ 1,199 + 500 WRP</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="order-screen">
+                                                <h2 class="accordion-header border-top mt-3" id="flush-headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                        aria-controls="flush-collapseOne">
+                                                        Cancellation Policy
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body mb-3">Once order is placed, cannot be cancelled’. Order can be
+                                                        replaced or returned for faulty or damaged products delivered,
+                                                        for more details visit <a href="#" class="text-theme">Help</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 card-shadow mt-3 mb-3 w-100">
+                            <div class="card-body pb-0">
+                                <div class="row position-relative">
+                                    <div class="col-12 mb-3">
+                                        <div class="row">
+                                            <div class="col-md-7 col-10">
+                                                <span class="text-muted fs-14">Order #1234567890 | 26 Oct, 06:34 PM</span>
+                                            </div>
+                                            <div class="col-md-5 col-2 text-end">
+                                                <a href="order-details.html" class="mob-hide"><span class="fs-12 text-theme">View Order Details ></span></a>
+                                                <a href="#" class="desktop-hide"><i class="bi bi-arrow-right-circle-fill text-theme"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <div class="img-pro-card">
+                                            <img src="assets/images/Rectangle 10024.png" class="w-100 h-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-8 ps-md-3  pe-md-3 ps-0 pe-5">
+                                        <div class="row h-100">
+                                            <div class="col-md-8">
+                                                <a class="product-items">
+                                                    <div class="product-name-md">
+                                                        <span>UNIGEN UNIPAD 150 Premium Wireless Charger Pad | 15W Type-C PD...</span>
+                                                    </div>
+                                                    <div class="product-price mt-md-4 mt-0 mb-2">
+                                                        <span class="text-delay fs-12 mb-4"><i class="bi bi-clock h6 me-1"></i> Delayed</span>
+                                                    </div>
+                                                    <div class="product-off d-flex mt-1">
+                                                        <span class="text-muted wrp-percent">Delivery expected by 06 Jan’22</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 d-flex align-items-center justifycontent-center">
+                                                <div>
+                                                    <span class="fs-20 fw-600">₹ 6,139 + 700 WRP</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="order-screen  border-top mt-3 pt-3">
+                                                <div class="accordion-collapse "
+                                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body mb-3">We apologise for any inconvenience caused, your order is delayed for some reason. Please contact our Help desk for more
+                                                    information.
+                                                        <div class="row mt-3">
+                                                            <div class="col-4">
+                                                                <span class="fs-12 fw-600">support@winds.co.in</span>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <span class="fs-12 fw-600">1800 103 1032</span>
+                                                            </div>
+                                                            <div class="col-4 text-end">
+                                                                <a href="#" class="text-theme">Help</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 card-shadow mt-3 mb-3 w-100">
+                            <div class="card-body pb-0">
+                                <div class="row position-relative">
+                                    <div class="col-12 mb-3">
+                                        <div class="row">
+                                            <div class="col-md-7 col-10">
+                                                <span class="text-muted fs-14">Order #1234567890 | 26 Oct, 06:34 PM</span>
+                                            </div>
+                                            <div class="col-md-5 col-2 text-end">
+                                                <a href="order-details.html" class="mob-hide"><span class="fs-12 text-theme">View Order Details ></span></a>
+                                                <a href="#" class="desktop-hide"><i class="bi bi-arrow-right-circle-fill text-theme"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-4">
+                                        <div class="img-pro-card">
+                                            <img src="assets/images/Rectangle 10024.png" class="w-100 h-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-8 ps-md-3  pe-md-3 ps-0 pe-5">
+                                        <div class="row h-100">
+                                            <div class="col-md-8">
+                                                <a class="product-items">
+                                                    <div class="product-name-md">
+                                                        <span>UNIGEN UNIPAD 150 Premium Wireless Charger Pad | 15W Type-C PD...</span>
+                                                    </div>
+                                                    <div class="product-price mt-md-4 mt-0 mb-2">
+                                                        <span class="text-muted fs-12 mb-4"><i class="bi bi-exclamation-circle-fill h6 me-1 text-danger"></i> Failed</span>
+                                                    </div>
+                                                    <div class="product-off d-flex mt-1">
+                                                        <span class="text-muted wrp-percent">Delivery expected by 06 Jan’22</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 d-flex align-items-center justifycontent-center">
+                                                <div>
+                                                    <span class="fs-20 fw-600">₹ 6,139 + 700 WRP</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="order-screen">
+                                                <h2 class="accordion-header border-top mt-3" id="flush-headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                        Cancellation Policy
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body mb-3">Once order is placed, cannot be cancelled’. Order can be
+                                                        replaced or returned for faulty or damaged products delivered,
+                                                        for more details visit <a href="#" class="text-theme">Help</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pt-4 px-md-0 px-3 mob-hide">
+        <div class="container py-5">
+            <div class="row mb-3">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <img src="assets/images/logo-foot.png" class="w-100">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-pinterest"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Terms & Conditions</a>
+                                <a class="foot-link">Contact US</a>
+                                <a class="foot-link">Refund Policy</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 mb-md-0 mb-3">
+                            <div class="invisible">
+                                <h6 class="fs-18 foot-head">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Privacy Policy</a>
+                                <a class="foot-link">Help & FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Customer Care</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Email support@winds.co.in</a>
+                                <a class="foot-link">1800 103 1032 (From 9am to 9am)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-black py-2 px-0">
+            <div class="row m-0">
+                <div class="col-md-12 text-center">
+                    <div class="foot-text">
+                        <small> &copy; Copyright 2022 WINDS E WORLD</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jQuery_v3.6.0.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav-left").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav-left").style.width = "0";
+        }
+    </script>
+
+    <script>
+        function openfilter() {
+            document.getElementById("bottom-nav").style.height = "auto";
+        }
+
+        function closefilter() {
+            document.getElementById("bottom-nav").style.height = "0";
+        }
+
+         function openSort() {
+                document.getElementById("sort-nav").style.height = "auto";
+            }
+
+            function closeSort() {
+                document.getElementById("sort-nav").style.height = "0";
+            }
+    </script>
+
+</body>
+
+</html>

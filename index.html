@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>One App - Welcomes you</title>
+</head>
+
+<body>
+    <section class="bg-theme">
+        <div class="container">
+            <div class="row py-2 justify-content-end">
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-exclamation-circle  me-2"></i> About
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-download  me-2"></i> Download App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mob-hide py-0">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <!-- <ul class="navbar-nav nav_list me-auto my-2 my-lg-0 ms-lg-5 ms-0"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" aria-current="page" href="#">Shopping</a>
+                            </li>
+                        </ul> -->
+                    <form class="v-center w-100 ms-5">
+                        <div class="deliver text-center mx-5">
+                            <div class="to">
+                                <span>Delivered to </span>
+                            </div>
+                            <div class="loc">
+                                <span><i class="bi bi-geo-alt"></i> Banglore <span>5000652</span></span>
+                            </div>
+                        </div>
+                        <div class="input-group search">
+                            <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i
+                                    class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input"
+                                placeholder="Search for products & deals" aria-describedby="inputGroup-sizing-default">
+
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link position-relative" href="payment-details.html"><i class="bi h4 cart-theme bi-cart"></i><span
+                                        class="cart-count">4</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropstart">
+                                <a class=" profile-drop" href="#">
+                                    PK
+                                </a>
+                                <a class="nav-link dropdown-toggle fw-500" href="#" id="navbarScrollingDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Amit Kumar <i class="bi bi-chevron-down fs-8"></i>
+                                    <span class="d-block fw-500 fs-12 text-secondary">1,600 WRP</span>
+                                </a>
+                                <ul class="dropdown-menu fs-13" aria-labelledby="navbarScrollingDropdown">
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-details.html">My Details</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="#">Account Summary</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="order-history.html">Order History</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-saved-address.html">My Saved Addressess</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-white desktop-hide shadow-sm">
+            <div class="row m-0 mid-center-v pb-1">
+                <div class="col-1 px-2">
+                    <span class="desktop-hide float-start" style="font-size:20px;cursor:pointer"
+                        onclick="openNav()">☰</span>
+                </div>
+                <div class="col-1 p-0">
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="w-100"></a>
+                </div>
+                <div class="col-7 px-0 ps-2">
+                    <div class="input-group search w-100">
+                        <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i
+                                class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input"
+                            placeholder="Search for products &amp; deals" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="col-1 ps-2 pe-0">
+                    <a class="nav-link position-relative" href="#"><i class="bi h4 cart-theme bi-cart"></i><span
+                            class="cart-count">4</span></a>
+                </div>
+                <div class="col-2">
+                    <a class=" profile-drop  float-start" href="#">PK</a>
+                </div>
+            </div>
+            <div class="deliver pt-2 border-top px-2">
+                <div class="loc">
+                    <span><i class="bi bi-geo-alt"></i><span class="to">Delivered to Amit -</span> Banglore
+                        <span>5000652</span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="desktop-hide main-menu">
+        <div id="mySidenav" class="sidenav">
+            <div class="mb-3">
+                <div class="mob-menu text-center">
+                    <a class=" profile-drop" href="#">
+                        PK
+                    </a>
+                    <span class="fs-14">Name</span>
+                    <div><span class="text-theme bg-lite px-3 rounded-pill"><small> 400 WRP</small></span></div>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="closebtn border-0" onclick="closeNav()">&times;</a>
+            <a href="#">My Details</a>
+            <a href="#">Account Summary</a>
+            <a href="#">Order History</a>
+            <a href="#">My Saved Addresses</a>
+            <a class="fw-500 border-0"> Quick Links </a>
+            <a class="border-0">Terms & Conditions </a>
+            <a class="border-0">Contact US</a>
+            <a class="border-0">Refund Policy</a>
+            <a class="border-0">Privacy Policy</a>
+            <a class="border-0">Help & FAQs</a>
+            <a class="fw-500 border-0"> Contact US</a>
+            <a class="border-0">Email support@winds.co.in</a>
+            <a class="border-0">1800 103 1032 (From 9am to 9am)</a>
+        </div>
+    </section>
+
+    <main>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="carouselExampleCaptions" class="carousel slide p-0" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class=""
+                                aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2" class=""></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3" class="active" aria-current="true"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="banner"></div>
+                                <!-- <img src="assets/images/banner/banner1.png" class="d-block w-100" alt="..."> -->
+                                <div class="carousel-caption  col-md-5 offset-md-5 col-5 offset-4 text-start">
+                                    <img src="assets/images/banner/product-logo.png" class="d-block banner-logo mb-md-3 mb-2"  alt="...">
+                                    <h1 class="mb-2 banner-h-tag">Raymond Weil Maestro</h1>
+                                    <p class="mb-md-4 mb-2 banner-p-tag"><small>The Beatles Sgt Pepper’s Limited Edition</small></p>
+                                    <button type="button" class="btn btn-white mb-xl-4 mb-lg-4 mb-md-2 mb-2">GRAB NOW</button>
+                                </div>
+                            </div>
+                          <!-- <div class="carousel-item">
+                                <img src="assets/images/banner/banner1.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1 class="mb-4">All set for Christmas with e-Vouchers</h1>
+                                    <button type="button" class="btn btn-white mb-4">GRAB NOW</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/banner/banner1.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1 class="mb-4">All set for Christmas with e-Vouchers</h1>
+                                    <button type="button" class="btn btn-white mb-4">GRAB NOW</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-3">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Physical Products</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Digital Vouchers</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="my-md-4 my-3 border-bottom">
+                                <div class="row justify-content-md-center">
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-pink">
+                                                    <img src="assets/images/products/1.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Travel & Hotel</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-red">
+                                                    <img src="assets/images/products/2.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Jewellery</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-purple">
+                                                    <img src="assets/images/products/3.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Retail Fashion</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-violet">
+                                                    <img src="assets/images/products/4.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Luxury Brands</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-navy-blue">
+                                                    <img src="assets/images/products/5.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Online Shopping</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-sky-blue">
+                                                    <img src="assets/images/products/6.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Departmental Stores</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-lite-green">
+                                                    <img src="assets/images/products/7.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Food & Beverages</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-dark-green">
+                                                    <img src="assets/images/products/8.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Entertainment</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-yellow">
+                                                    <img src="assets/images/products/4.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Luxury Brands</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-orange">
+                                                    <img src="assets/images/products/5.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Online Shopping</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-cherry">
+                                                    <img src="assets/images/products/6.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Departmental Stores</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-red">
+                                                    <img src="assets/images/products/2.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Jewellery</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="product-filter.html" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img product-color-purple">
+                                                    <img src="assets/images/products/3.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Retail Fashion</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mb-4">
+                                    <span class="h3">Curated For You</span>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p1.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p2.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p3.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p4.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p2.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p4.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p1.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p3.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p1.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p3.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p2.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p4.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            <div class="my-md-4 my-3 border-bottom">
+                                <div class="row justify-content-md-center">
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="#" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img">
+                                                    <img src="assets/images/products/2.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Travel & Hotel</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <div class="product-origin">
+                                            <div class="product-img">
+                                                <img src="assets/images/products/2.png">
+                                            </div>
+                                            <div class="name">
+                                                <span>Jewellery</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <div class="product-origin">
+                                            <div class="product-img">
+                                                <img src="assets/images/products/2.png">
+                                            </div>
+                                            <div class="name">
+                                                <span>Retail Fashion</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <div class="product-origin">
+                                            <div class="product-img">
+                                                <img src="assets/images/products/2.png">
+                                            </div>
+                                            <div class="name">
+                                                <span>Luxury Brands</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <div class="product-origin">
+                                            <div class="product-img">
+                                                <img src="assets/images/products/2.png">
+                                            </div>
+                                            <div class="name">
+                                                <span>Online Shopping</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <a href="#" class="">
+                                            <div class="product-origin">
+                                                <div class="product-img">
+                                                    <img src="assets/images/products/2.png">
+                                                </div>
+                                                <div class="name">
+                                                    <span>Departmental Stores</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <div class="product-origin">
+                                            <div class="product-img">
+                                                <img src="assets/images/products/2.png">
+                                            </div>
+                                            <div class="name">
+                                                <span>Food & Beverages</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-auto col-4 mb-3">
+                                        <div class="product-origin">
+                                            <div class="product-img">
+                                                <img src="assets/images/products/2.png">
+                                            </div>
+                                            <div class="name">
+                                                <span>Entertainment</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mb-4">
+                                    <span class="h3">Curated For You</span>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p1.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p2.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p3.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p4.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p2.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p4.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p1.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p3.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p1.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p3.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p2.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+                                    <div class="col-md-3 col-6 mb-4">
+                                         <a class="product-items" href="product-detail.html">
+                                            <div class="product-img mb-3">
+                                                <img src="assets/images/p4.png">
+                                            </div>
+                                            <div class="product-name">
+                                                <span>Nokia 225 4G Dual SIM Feature Phone with Long Battery Life, Camera, Multiplayer Games</span>
+                                            </div>
+                                            <div class="product-price mt-1">
+                                                <span class="offer-price me-3">₹ 1,000</span><span class="actual-price">₹ 2,500</span>
+                                            </div>
+                                            <div class="product-off">
+                                                <span class="offer-percent me-2">50% OFF</span><span class="wrp-percent">By using 1,700 WRP</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pt-4 px-md-0 px-3 mob-hide">
+        <div class="container py-5">
+            <div class="row mb-3">
+
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <img src="assets/images/logo-foot.png" class="w-100">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-pinterest"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Terms & Conditions</a>
+                                <a class="foot-link">Contact US</a>
+                                <a class="foot-link">Refund Policy</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 mb-md-0 mb-3">
+                            <div class="invisible">
+                                <h6 class="fs-18 foot-head">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Privacy Policy</a>
+                                <a class="foot-link">Help & FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Customer Care</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Email support@winds.co.in</a>
+                                <a class="foot-link">1800 103 1032 (From 9am to 9am)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-black py-2 px-0">
+            <div class="row m-0">
+                <div class="col-md-12 text-center">
+                    <div class="foot-text">
+                       <small> &copy; Copyright 2022 WINDS E WORLD</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jQuery_v3.6.0.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script>
+        function openNav() {
+            document.getElementById("mySidenav-left") .style.width="250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav-left") .style.width="0";
+        }
+    </script>
+</body>
+
+</html>

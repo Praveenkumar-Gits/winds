@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>One App - Welcomes you</title>
+</head>
+
+<body>
+    <section class="bg-theme">
+        <div class="container">
+            <div class="row py-2 justify-content-end">
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-exclamation-circle  me-2"></i> About
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a class="text-white v-center fs-12 fw-200">
+                        <i class="bi bi-download  me-2"></i> Download App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mob-hide py-0">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <!-- <ul class="navbar-nav nav_list me-auto my-2 my-lg-0 ms-lg-5 ms-0"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" aria-current="page" href="#">Shopping</a>
+                        </li>
+                    </ul> -->
+                    <form class="v-center w-100 ms-5">
+                        <div class="deliver text-center mx-5">
+                            <div class="to">
+                                <span>Delivered to </span>
+                            </div>
+                            <div class="loc">
+                                <span><i class="bi bi-geo-alt"></i> Banglore <span>5000652</span></span>
+                            </div>
+                        </div>
+                        <div class="input-group search">
+                            <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input" placeholder="Search for products & deals"
+                                aria-describedby="inputGroup-sizing-default">
+                                
+                        </div>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link position-relative" href="payment-details.html"><i class="bi h4 cart-theme bi-cart"></i><span
+                                        class="cart-count">4</span></a>
+                            </li>
+                            <li class="nav-item dropdown dropstart">
+                                <a class=" profile-drop" href="#">
+                                    PK
+                                </a>
+                                <a class="nav-link dropdown-toggle fw-500" href="#" id="navbarScrollingDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Amit Kumar <i class="bi bi-chevron-down fs-8"></i>
+                                    <span class="d-block fw-500 fs-12 text-secondary">1,600 WRP</span>
+                                </a>
+                                <ul class="dropdown-menu fs-13" aria-labelledby="navbarScrollingDropdown">
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-details.html">My Details</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="#">Account Summary</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="order-history.html">Order History</a></li>
+                                    <li class="border-bottom"><a class="dropdown-item" href="my-saved-address.html">My Saved Addressess</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white desktop-hide shadow-sm">
+            <div class="row m-0 mid-center-v pb-1">
+                <div class="col-1 px-2">
+                    <span class="desktop-hide float-start" style="font-size:20px;cursor:pointer" onclick="openNav()">☰</span>
+                </div>
+                <div class="col-1 p-0">
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="w-100"></a>
+                </div>
+                <div class="col-7 px-0">
+                    <div class="input-group search w-100">
+                        <span class="input-group-text bg-transparent" id="inputGroup-sizing-default"><i
+                                class="bi bi-search"></i></span>
+                        <input type="text" class="form-control border-start-0 fs-12" aria-label="Sizing example input"
+                            placeholder="Search for products &amp; deals" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="col-1 ps-2 pe-0">
+                    <a class="nav-link position-relative" href="#"><i class="bi h4 cart-theme bi-cart"></i><span class="cart-count">4</span></a>
+                </div>
+                <div class="col-2">
+                    <a class=" profile-drop  float-start" href="#">PK</a>
+                </div>
+            </div>
+            <div class="deliver pt-2 border-top px-2">
+                <div class="loc">
+                    <span><i class="bi bi-geo-alt"></i><span  class="to">Delivered to Amit -</span> Banglore <span>5000652</span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <div class="container">
+                <div class="row mt-md-5 mt-4">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="card border-0 card-shadow p-2 px-3 oc-confirm-bg">
+                            <div class="card-body p-md-4 p-0">
+                                <div class="row">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-7 pt-md-0 pt-3">
+                                                <span class="oc-confirm"><i class="bi bi-patch-check-fill order-success me-2"></i>Yay! Order Confirmed!</span>
+                                                <label class="fs-16 fw-700 my-4">Hello Amit,</label>
+                                                <div class="oc-pera mb-4">
+                                                    Thank you for shopping with us. We'd like to let you know that WINDS has received your order, and is preparing it
+                                                    for
+                                                    shipment. Your estimated delivery date is below. If you would like to view the status of your order or make any
+                                                    changes
+                                                    to it, please visit <a href="#" class="text-theme">My Orders</a> page.
+                                                </div>
+                                            </div>
+                                            <div class="col-5 d-flex">
+                                                <img src="assets/images/Group.png" class="mob-hide">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="oc-details mt-2 mb-4">
+                                    <div class="row">
+                                        <div class="mb-3">
+                                            <div class="fs-14 fw-700">Order Details</div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between">
+                                        <div class="col-md-auto col-6 mb-md-0 mb-3">
+                                            <label class="order-title d-block">Order ID</label>
+                                            <p class="fs- oc-pera m-0">89582593593</p>
+                                        </div>
+                                        <div class="col-md-auto col-6 mb-md-0 mb-3">
+                                            <label class="order-title d-block">Order Date</label>
+                                            <p class="fs- oc-pera m-0">28, Dec’21</p>
+                                        </div>
+                                        <div class="col-md-auto col-6 mb-md-0 mb-3">
+                                            <label class="order-title d-block">Transaction ID</label>
+                                            <p class="fs- oc-pera m-0">TN98765432</p>
+                                        </div>
+                                        <div class="col-md-auto col-6 mb-md-0 mb-3">
+                                            <label class="order-title d-block">Available Points</label>
+                                            <p class="fs- oc-pera m-0">400 WRP</p>
+                                        </div>
+                                        <div class="col-md-auto col-6">
+                                            <label class="order-title d-block">Total Payment</label>
+                                            <p class="fs- oc-pera m-0">₹ 7,139 + 1,200 WRP</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="px-0 py-3 border-bottom">
+                                    <label class="shipping-label d-block">Shipping Address</label>
+                                    <label class="shipping-name d-block">Amit Kumar</label>
+                                    <div class="shipping-address">
+                                        Reward360 Global Services
+                                    </div>
+                                    <div class="shipping-address">
+                                        Fortune Summit Business Park, Plot No.244, 6th Floor, West Side, Hosur Rd,
+                                    </div>
+                                    <div class="shipping-address">
+                                        Bengaluru, Karnataka 560068
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="row position-relative mx-0 mt-3">
+                                        <div class="col-md-2 p-0 col-4">
+                                            <div>
+                                                <img src="assets/images/Rectangle 10024.png" class="w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-8 ps-md-3  pe-md-3 pe-5  d-flex align-items-center ">
+                                            <div>
+                                                <span class="fs-14 fw-500">Westside Gift Voucher</span>
+                                                <div>
+                                                    <span class="fs-14 fw-600">₹ 1,199 + 500 WRP</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-2 p-0">
+                                            <span class="fs-12 order-success">Estimate Delivery in 5 Business Days</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row position-relative mx-0 mt-3">
+                                        <div class="col-md-2 p-0 col-4">
+                                            <div>
+                                                <img src="assets/images/p3.png" class="w-100">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-8 ps-md-3  pe-md-3 pe-5  d-flex align-items-center ">
+                                            <div>
+                                                <span class="fs-14 fw-500">Skullcandy Indy Evo True Wireless Earbuds</span>
+                                                <div>
+                                                    <span class="fs-14 fw-600">₹ 1,199 + 500 WRP</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 mt-2 p-0">
+                                            <span class="fs-12 order-success">Estimate Delivery in 5 Business Days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="text-center">
+                        <a href="index.html" type="button" class="btn btn-theme  py-2 px-4 fs-14 fw-300"><i class="bi bi-house-door-fill"></i> Back to Home</a>
+                        <a href="order-history.html" type="button" class="btn btn-theme  py-2 fs-14 fw-300"> <i class="bi bi-archive me-2"></i>View Order History</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pt-4 px-md-0 px-3 mob-hide">
+        <div class="container py-5">
+            <div class="row mb-3">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div class="row">
+                                <div class="col-8">
+                                    <img src="assets/images/logo-foot.png" class="w-100">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-pinterest"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="foot-text">
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Terms & Conditions</a>
+                                <a class="foot-link">Contact US</a>
+                                <a class="foot-link">Refund Policy</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 mb-md-0 mb-3">
+                            <div class="invisible">
+                                <h6 class="fs-18 foot-head">Quick Links</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Privacy Policy</a>
+                                <a class="foot-link">Help & FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-md-0 mb-3">
+                            <div>
+                                <h6 class="fs-18 foot-head mb-4">Customer Care</h6>
+                            </div>
+                            <div class="foot-text">
+                                <a class="foot-link">Email support@winds.co.in</a>
+                                <a class="foot-link">1800 103 1032 (From 9am to 9am)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-black py-2 px-0">
+            <div class="row m-0">
+                <div class="col-md-12 text-center">
+                    <div class="foot-text">
+                        <small> &copy; Copyright 2022 WINDS E WORLD</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jQuery_v3.6.0.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav-left").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav-left").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
